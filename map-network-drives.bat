@@ -1,13 +1,9 @@
-net use I: \\hq.local\incominggames
-net use J: \\hq.local\incomingmusic
-net use K: \\hq.local\incomingtvvideo
-net use M: \\hq.local\music
-net use N: \\hq.local\incomingebooks
-net use O: \\hq.local\incomingcomics
-net use X: \\hq.local\games
-net use Z: \\hq.local\incomingscratch
-
-
-
-
+net use I: \\192.168.1.50\incominggames
+net use J: \\192.168.1.50\incomingmusic
+net use K: \\192.168.1.50\incomingtvvideo
+net use M: \\192.168.1.50\music
+net use N: \\192.168.1.50\incomingebooks
+net use O: \\192.168.1.50\incomingcomics
+net use X: \\192.168.1.50\games
+net use Z: \\192.168.1.50\incomingscratch
 
