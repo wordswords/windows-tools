@@ -13,7 +13,7 @@ size = 18
 family = "DroidSansM Nerd Font Mono"
 
 [shell]
-program = "wsl"
+program = "wsl --cd ~"
 
 [cursor.style]
 shape = "Underline"
