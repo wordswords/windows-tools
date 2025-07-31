@@ -12,7 +12,7 @@ size = 18
 [font.normal]
 family = "DroidSansM Nerd Font Mono"
 
-[terminal.shell]
+[shell]
 program = "wsl --cd ~"
 
 [cursor.style]
