@@ -8,7 +8,7 @@ net use X: /delete
 net use Y: /delete
 net use Z: /delete
 
-set h=hq.local
+set h=hq
 
 net use J: \\%h%\incominggames
 net use K: \\%h%\incomingmusic
