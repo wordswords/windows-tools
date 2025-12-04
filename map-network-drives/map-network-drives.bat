@@ -1,4 +1,6 @@
+net use B: /delete
 net use G: /delete
+net use F: /delete
 net use J: /delete
 net use K: /delete
 net use L: /delete
