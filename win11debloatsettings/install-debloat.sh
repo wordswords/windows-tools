@@ -9,6 +9,7 @@ git clone git@github.com:Raphire/Win11Debloat.git /tmp/Win11Debloat
 sudo rm -rf /mnt/c/Users/conta/My\ Documents/Win11Debloat
 sudo mv /tmp/Win11Debloat/ /mnt/c/Users/conta/My\ Documents/Win11Debloat
 sudo cp ./DefaultSettings.json /mnt/c/Users/conta/My\ Documents/Win11Debloat
+sudo mkdir /mnt/c/Users/conta/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup/
 sudo cp ./startup-dir-ps1-to-run-debloat.ps1 /mnt/c/Users/conta/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup/
 
 
