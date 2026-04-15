@@ -106,10 +106,6 @@
             "Value": true
         },
         {
-            "Name": "DisableGameBarIntegration",
-            "Value": true
-        },
-        {
             "Name": "DisableSettings365Ads",
             "Value": true
         },
