@@ -12,16 +12,14 @@ net use X: /delete
 net use Y: /delete
 net use Z: /delete
 
-set h=hq.local
+set h=192.168.1.200
 
-cmdkey /delete:%h%
-
-net use G: \\%h%\games /user:guest ""
-net use J: \\%h%\incominggames /user:guest ""
-net use K: \\%h%\incomingmusic /user:guest ""
-net use M: \\%h%\music /user:guest ""
-net use N: \\%h%\incomingebooks /user:guest ""
-net use T: \\%h%\incomingtvvideo /user:guest ""
-net use O: \\%h%\incomingcomics /user:guest ""
-net use Z: \\%h%\incomingscratch /user:guest ""
+net use G: \\%h%\games
+net use J: \\%h%\incominggames
+net use K: \\%h%\incomingmusic
+net use M: \\%h%\music
+net use N: \\%h%\incomingebooks
+net use T: \\%h%\incomingtvvideo
+net use O: \\%h%\incomingcomics
+net use Z: \\%h%\incomingscratch
 
