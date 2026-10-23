@@ -14,15 +14,15 @@ net use Z: /delete
 
 set h=192.168.1.200
 
-net use G: \\%h%\games
-net use J: \\%h%\incominggames
-net use K: \\%h%\incomingmusic
-net use L: \\%h%\incomingpapers
-net use M: \\%h%\music
-net use N: \\%h%\incomingebooks
-net use T: \\%h%\incomingtvvideo
-net use O: \\%h%\incomingcomics
-net use Y: \\%h%\incomingmiscaudio
-net use X: \\%h%\incomingmiscvideo
-net use Z: \\%h%\incomingscratch
+net use G: \\%h%\games /user:guest ""
+net use J: \\%h%\incominggames /user:guest ""
+net use K: \\%h%\incomingmusic /user:guest ""
+net use L: \\%h%\incomingpapers /user:guest ""
+net use M: \\%h%\music /user:guest ""
+net use N: \\%h%\incomingebooks /user:guest ""
+net use T: \\%h%\incomingtvvideo /user:guest ""
+net use O: \\%h%\incomingcomics /user:guest ""
+net use Y: \\%h%\incomingmiscaudio /user:guest ""
+net use X: \\%h%\incomingmiscvideo /user:guest ""
+net use Z: \\%h%\incomingscratch /user:guest ""
 
