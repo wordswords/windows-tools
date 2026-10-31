@@ -1,0 +1,678 @@
+{
+  "manifestVersion": 2,
+  "generator": "New-LolbinFirewallPolicy v1.1.0",
+  "generatedUtc": "2026-10-29T22:57:28Z",
+  "policyName": "LOLBAS-Block-Outbound",
+  "remoteAddress": [
+    "Internet"
+  ],
+  "exclusions": [],
+  "rules": [
+    {
+      "name": "LOLBAS-Block-Outbound-certutil.exe-Sys32",
+      "displayName": "Block outbound internet - certutil.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\certutil.exe",
+      "binary": "certutil.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Certificate tool; -urlcache/-verifyctl can download and exfiltrate files. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-certutil.exe-Wow64",
+      "displayName": "Block outbound internet - certutil.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\certutil.exe",
+      "binary": "certutil.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Certificate tool; -urlcache/-verifyctl can download and exfiltrate files. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-bitsadmin.exe-Sys32",
+      "displayName": "Block outbound internet - bitsadmin.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\bitsadmin.exe",
+      "binary": "bitsadmin.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. BITS admin tool (note: does not contain transfers made by the BITS service itself). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-bitsadmin.exe-Wow64",
+      "displayName": "Block outbound internet - bitsadmin.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\bitsadmin.exe",
+      "binary": "bitsadmin.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. BITS admin tool (note: does not contain transfers made by the BITS service itself). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-curl.exe-Sys32",
+      "displayName": "Block outbound internet - curl.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\curl.exe",
+      "binary": "curl.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Modern Windows ships curl.exe; direct download/upload primitive. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-curl.exe-Wow64",
+      "displayName": "Block outbound internet - curl.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\curl.exe",
+      "binary": "curl.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Modern Windows ships curl.exe; direct download/upload primitive. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-tar.exe-Sys32",
+      "displayName": "Block outbound internet - tar.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\tar.exe",
+      "binary": "tar.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. bsdtar; supports remote URL fetch (http, ftp, sftp). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-tar.exe-Wow64",
+      "displayName": "Block outbound internet - tar.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\tar.exe",
+      "binary": "tar.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. bsdtar; supports remote URL fetch (http, ftp, sftp). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-ftp.exe-Sys32",
+      "displayName": "Block outbound internet - ftp.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\ftp.exe",
+      "binary": "ftp.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Legacy FTP client (removed in recent builds; rule stays inert). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-ftp.exe-Wow64",
+      "displayName": "Block outbound internet - ftp.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\ftp.exe",
+      "binary": "ftp.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Legacy FTP client (removed in recent builds; rule stays inert). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-tftp.exe-Sys32",
+      "displayName": "Block outbound internet - tftp.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\tftp.exe",
+      "binary": "tftp.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Legacy TFTP client (removed in recent builds; rule stays inert). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-tftp.exe-Wow64",
+      "displayName": "Block outbound internet - tftp.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\tftp.exe",
+      "binary": "tftp.exe",
+      "category": "Download",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Legacy TFTP client (removed in recent builds; rule stays inert). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-mshta.exe-Sys32",
+      "displayName": "Block outbound internet - mshta.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\mshta.exe",
+      "binary": "mshta.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. HTML Application host; executes inline VBScript/JScript. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-mshta.exe-Wow64",
+      "displayName": "Block outbound internet - mshta.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\mshta.exe",
+      "binary": "mshta.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. HTML Application host; executes inline VBScript/JScript. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-wscript.exe-Sys32",
+      "displayName": "Block outbound internet - wscript.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\wscript.exe",
+      "binary": "wscript.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Script Host (GUI); executes .vbs/.js. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-wscript.exe-Wow64",
+      "displayName": "Block outbound internet - wscript.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\wscript.exe",
+      "binary": "wscript.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Script Host (GUI); executes .vbs/.js. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-cscript.exe-Sys32",
+      "displayName": "Block outbound internet - cscript.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\cscript.exe",
+      "binary": "cscript.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Script Host (console); executes .vbs/.js. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-cscript.exe-Wow64",
+      "displayName": "Block outbound internet - cscript.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\cscript.exe",
+      "binary": "cscript.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Script Host (console); executes .vbs/.js. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-powershell.exe-Sys32PS",
+      "displayName": "Block outbound internet - powershell.exe (Sys32PS)",
+      "program": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "binary": "powershell.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows PowerShell console; network via .NET/WebClient. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-powershell.exe-Wow64PS",
+      "displayName": "Block outbound internet - powershell.exe (Wow64PS)",
+      "program": "%SystemRoot%\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "binary": "powershell.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows PowerShell console; network via .NET/WebClient. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-powershell_ise.exe-Sys32PS",
+      "displayName": "Block outbound internet - powershell_ise.exe (Sys32PS)",
+      "program": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell_ise.exe",
+      "binary": "powershell_ise.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows PowerShell ISE; same .NET networking as console host. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-powershell_ise.exe-Wow64PS",
+      "displayName": "Block outbound internet - powershell_ise.exe (Wow64PS)",
+      "program": "%SystemRoot%\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell_ise.exe",
+      "binary": "powershell_ise.exe",
+      "category": "ScriptHost",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows PowerShell ISE; same .NET networking as console host. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regsvr32.exe-Sys32",
+      "displayName": "Block outbound internet - regsvr32.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\regsvr32.exe",
+      "binary": "regsvr32.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. COM registration; /i:http... remote script execution. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regsvr32.exe-Wow64",
+      "displayName": "Block outbound internet - regsvr32.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\regsvr32.exe",
+      "binary": "regsvr32.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. COM registration; /i:http... remote script execution. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-rundll32.exe-Sys32",
+      "displayName": "Block outbound internet - rundll32.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\rundll32.exe",
+      "binary": "rundll32.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Generic DLL entry-point executor (e.g. javascript: URLs). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-rundll32.exe-Wow64",
+      "displayName": "Block outbound internet - rundll32.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\rundll32.exe",
+      "binary": "rundll32.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Generic DLL entry-point executor (e.g. javascript: URLs). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msiexec.exe-Sys32",
+      "displayName": "Block outbound internet - msiexec.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\msiexec.exe",
+      "binary": "msiexec.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Installer; can install from URL sources. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msiexec.exe-Wow64",
+      "displayName": "Block outbound internet - msiexec.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\msiexec.exe",
+      "binary": "msiexec.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Windows Installer; can install from URL sources. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-installutil.exe-NET64",
+      "displayName": "Block outbound internet - installutil.exe (NET64)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\installutil.exe",
+      "binary": "installutil.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET installer utility; executes arbitrary C# installers. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-installutil.exe-NET32",
+      "displayName": "Block outbound internet - installutil.exe (NET32)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework\\v4.0.30319\\installutil.exe",
+      "binary": "installutil.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET installer utility; executes arbitrary C# installers. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regasm.exe-NET64",
+      "displayName": "Block outbound internet - regasm.exe (NET64)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\regasm.exe",
+      "binary": "regasm.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET assembly registration; executes installer classes. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regasm.exe-NET32",
+      "displayName": "Block outbound internet - regasm.exe (NET32)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework\\v4.0.30319\\regasm.exe",
+      "binary": "regasm.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET assembly registration; executes installer classes. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regsvcs.exe-NET64",
+      "displayName": "Block outbound internet - regsvcs.exe (NET64)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\regsvcs.exe",
+      "binary": "regsvcs.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET COM+ registration; executes installer classes. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-regsvcs.exe-NET32",
+      "displayName": "Block outbound internet - regsvcs.exe (NET32)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework\\v4.0.30319\\regsvcs.exe",
+      "binary": "regsvcs.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. .NET COM+ registration; executes installer classes. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msbuild.exe-NET64",
+      "displayName": "Block outbound internet - msbuild.exe (NET64)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework64\\v4.0.30319\\msbuild.exe",
+      "binary": "msbuild.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Build engine; inline tasks execute arbitrary code. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msbuild.exe-NET32",
+      "displayName": "Block outbound internet - msbuild.exe (NET32)",
+      "program": "%SystemRoot%\\Microsoft.NET\\Framework\\v4.0.30319\\msbuild.exe",
+      "binary": "msbuild.exe",
+      "category": "CodeExec",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Build engine; inline tasks execute arbitrary code. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-wmic.exe-Sys32WBEM",
+      "displayName": "Block outbound internet - wmic.exe (Sys32WBEM)",
+      "program": "%SystemRoot%\\System32\\wbem\\wmic.exe",
+      "binary": "wmic.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. WMI command line; remote /node: operations. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-wmic.exe-Wow64WBEM",
+      "displayName": "Block outbound internet - wmic.exe (Wow64WBEM)",
+      "program": "%SystemRoot%\\SysWOW64\\wbem\\wmic.exe",
+      "binary": "wmic.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. WMI command line; remote /node: operations. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-mstsc.exe-Sys32",
+      "displayName": "Block outbound internet - mstsc.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\mstsc.exe",
+      "binary": "mstsc.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Remote Desktop client. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-mstsc.exe-Wow64",
+      "displayName": "Block outbound internet - mstsc.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\mstsc.exe",
+      "binary": "mstsc.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Remote Desktop client. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-schtasks.exe-Sys32",
+      "displayName": "Block outbound internet - schtasks.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\schtasks.exe",
+      "binary": "schtasks.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Task scheduler; /S remote host task creation. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-schtasks.exe-Wow64",
+      "displayName": "Block outbound internet - schtasks.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\schtasks.exe",
+      "binary": "schtasks.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Task scheduler; /S remote host task creation. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-sc.exe-Sys32",
+      "displayName": "Block outbound internet - sc.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\sc.exe",
+      "binary": "sc.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Service control; \\\\remote operations. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-sc.exe-Wow64",
+      "displayName": "Block outbound internet - sc.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\sc.exe",
+      "binary": "sc.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Service control; \\\\remote operations. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-net.exe-Sys32",
+      "displayName": "Block outbound internet - net.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\net.exe",
+      "binary": "net.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. net use / domain ops over SMB. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-net.exe-Wow64",
+      "displayName": "Block outbound internet - net.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\net.exe",
+      "binary": "net.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. net use / domain ops over SMB. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-net1.exe-Sys32",
+      "displayName": "Block outbound internet - net1.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\net1.exe",
+      "binary": "net1.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. net.exe runtime helper; same SMB exposure. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-net1.exe-Wow64",
+      "displayName": "Block outbound internet - net1.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\net1.exe",
+      "binary": "net1.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. net.exe runtime helper; same SMB exposure. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-nltest.exe-Sys32",
+      "displayName": "Block outbound internet - nltest.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\nltest.exe",
+      "binary": "nltest.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. DC locator / domain enumeration. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-nltest.exe-Wow64",
+      "displayName": "Block outbound internet - nltest.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\nltest.exe",
+      "binary": "nltest.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. DC locator / domain enumeration. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-reg.exe-Sys32",
+      "displayName": "Block outbound internet - reg.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\reg.exe",
+      "binary": "reg.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Registry tool; \\\\remote\\HKLM queries over SMB. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-reg.exe-Wow64",
+      "displayName": "Block outbound internet - reg.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\reg.exe",
+      "binary": "reg.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. Registry tool; \\\\remote\\HKLM queries over SMB. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-iscsicli.exe-Sys32",
+      "displayName": "Block outbound internet - iscsicli.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\iscsicli.exe",
+      "binary": "iscsicli.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. iSCSI command line; remote storage attach. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-iscsicli.exe-Wow64",
+      "displayName": "Block outbound internet - iscsicli.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\iscsicli.exe",
+      "binary": "iscsicli.exe",
+      "category": "RemoteAdmin",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. iSCSI command line; remote storage attach. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-ssh.exe-OpenSSH",
+      "displayName": "Block outbound internet - ssh.exe (OpenSSH)",
+      "program": "%SystemRoot%\\System32\\OpenSSH\\ssh.exe",
+      "binary": "ssh.exe",
+      "category": "OpenSSH",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. OpenSSH client; located under System32\\OpenSSH. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-scp.exe-OpenSSH",
+      "displayName": "Block outbound internet - scp.exe (OpenSSH)",
+      "program": "%SystemRoot%\\System32\\OpenSSH\\scp.exe",
+      "binary": "scp.exe",
+      "category": "OpenSSH",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. OpenSSH copy. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-sftp.exe-OpenSSH",
+      "displayName": "Block outbound internet - sftp.exe (OpenSSH)",
+      "program": "%SystemRoot%\\System32\\OpenSSH\\sftp.exe",
+      "binary": "sftp.exe",
+      "category": "OpenSSH",
+      "adminSensitive": true,
+      "description": "LOLBAS outbound internet block. OpenSSH SFTP. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-ssh-keyscan.exe-OpenSSH",
+      "displayName": "Block outbound internet - ssh-keyscan.exe (OpenSSH)",
+      "program": "%SystemRoot%\\System32\\OpenSSH\\ssh-keyscan.exe",
+      "binary": "ssh-keyscan.exe",
+      "category": "OpenSSH",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. OpenSSH key scanning (recon primitive). Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-xwizard.exe-Sys32",
+      "displayName": "Block outbound internet - xwizard.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\xwizard.exe",
+      "binary": "xwizard.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Extensible wizard; network-capable class. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-xwizard.exe-Wow64",
+      "displayName": "Block outbound internet - xwizard.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\xwizard.exe",
+      "binary": "xwizard.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Extensible wizard; network-capable class. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msdt.exe-Sys32",
+      "displayName": "Block outbound internet - msdt.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\msdt.exe",
+      "binary": "msdt.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Diagnostics (Follina); can run remote diagnostics paths. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-msdt.exe-Wow64",
+      "displayName": "Block outbound internet - msdt.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\msdt.exe",
+      "binary": "msdt.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Diagnostics (Follina); can run remote diagnostics paths. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-hh.exe-Sys32",
+      "displayName": "Block outbound internet - hh.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\hh.exe",
+      "binary": "hh.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. HTML Help; can retrieve remote compiled help. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-hh.exe-Wow64",
+      "displayName": "Block outbound internet - hh.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\hh.exe",
+      "binary": "hh.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. HTML Help; can retrieve remote compiled help. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-rasautou.exe-Sys32",
+      "displayName": "Block outbound internet - rasautou.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\rasautou.exe",
+      "binary": "rasautou.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Remote Access AutoDial; download capability. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-rasautou.exe-Wow64",
+      "displayName": "Block outbound internet - rasautou.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\rasautou.exe",
+      "binary": "rasautou.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Remote Access AutoDial; download capability. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-stordiag.exe-Sys32",
+      "displayName": "Block outbound internet - stordiag.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\stordiag.exe",
+      "binary": "stordiag.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Storage diagnostics; collects traces/uploads. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-stordiag.exe-Wow64",
+      "displayName": "Block outbound internet - stordiag.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\stordiag.exe",
+      "binary": "stordiag.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Storage diagnostics; collects traces/uploads. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-presentationhost.exe-Sys32",
+      "displayName": "Block outbound internet - presentationhost.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\presentationhost.exe",
+      "binary": "presentationhost.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. XBAP host; downloads .xbap applications. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-presentationhost.exe-Wow64",
+      "displayName": "Block outbound internet - presentationhost.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\presentationhost.exe",
+      "binary": "presentationhost.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. XBAP host; downloads .xbap applications. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-certreq.exe-Sys32",
+      "displayName": "Block outbound internet - certreq.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\certreq.exe",
+      "binary": "certreq.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Certificate request; submits to remote CAs. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-certreq.exe-Wow64",
+      "displayName": "Block outbound internet - certreq.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\certreq.exe",
+      "binary": "certreq.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Certificate request; submits to remote CAs. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-devicecredentialdeployment.exe-Sys32",
+      "displayName": "Block outbound internet - devicecredentialdeployment.exe (Sys32)",
+      "program": "%SystemRoot%\\System32\\devicecredentialdeployment.exe",
+      "binary": "devicecredentialdeployment.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Workplace join; network enrollment. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    },
+    {
+      "name": "LOLBAS-Block-Outbound-devicecredentialdeployment.exe-Wow64",
+      "displayName": "Block outbound internet - devicecredentialdeployment.exe (Wow64)",
+      "program": "%SystemRoot%\\SysWOW64\\devicecredentialdeployment.exe",
+      "binary": "devicecredentialdeployment.exe",
+      "category": "Misc",
+      "adminSensitive": false,
+      "description": "LOLBAS outbound internet block. Workplace join; network enrollment. Managed by New-LolbinFirewallPolicy v1.1.0; do not edit manually."
+    }
+  ]
+}
